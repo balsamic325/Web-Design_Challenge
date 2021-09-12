@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Bootstrap Demo</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Creates the Overall Grid -->
+  <div class="container">
+
+    <!-- First Row -->
+    <div class="row">
+      <!-- First (and only column) -->
+      <div class="col-md-12">
+        <p>
+          I'm a size 12 column. I am the only column on my row. 
+          I stretch the entire width. And keep going.
+        </p>
+      </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row">
+      <!-- First of two columns -->
+      <div class="col-md-6">
+        <p>
+          I'm a size 6 column. I take up half
+           a 12 column row
+          </p>
+      </div>
+      <!-- Second of two columns -->
+      <div class="col-md-6">
+        <p>
+          I'm a size 6 column. I take up half a 12 column row
+        </p>
+      </div>
+    </div>
+
+    <!--Third Row-->
+    <div class="row">
+      <!--First of Two Columns-->
+      <div class="col-md-8">
+        <p>
+          Columns don't need to be the same size. 
+          I'm a size 8 column.
+        </p>
+      </div>
+      <!--Second of Two Columns-->
+      <div class="col-md-4">
+        <p>
+          They just need to fill 12 columns or less per row. 
+          I'm a 4 column.
+        </p>
+      </div>
+    </div>
+
+    <!--Fourth Row-->
+    <div class="row">
+      <!--First and Only Column in this Row-->
+      <div class="col-md-6">
+        <p>
+          We can leave part of a row blank, by just not filling it up.
+          I'm a size 6 column
+        </p>
+      </div>
+    </div>
+
+    <!--Fifth Row-->
+    <div class="row justify-content-end">
+      <!--First and Only Column in this Row-->
+      <!--Notice how horizontally aligned this column to the right-->
+      <div class="col-md-6">
+        <p>
+          We can also offset a column if we want. I'm a size 6 
+          column, justified to the end of the row
+        </p>
+      </div>
+    </div>
+
+    <!--Seventh Row-->
+    <div class="row">
+      <!--First Column in this Row-->
+      <div class="col-md-6">
+          <p class="highlight">
+            If you want to change an element inside the grid, then add CSS to 
+            the element inside the grid. Not the grid itself.
+          </p>
+      </div>
+
+      <!--Second Column in this Row-->
+      <div class="col-md-6">
+          <p class="highlight">
+            Adding CSS directly to the grid will probably break things 
+            elsewhere, as that isn't the intended usage.
+          </p>
+      </div>
+    </div>
+
+    <div class="alert alert-primary" role="alert">
+      This is an alert, a bootstrap component!
+    </div>
+  </div>
+
+</body>
+
+</html>

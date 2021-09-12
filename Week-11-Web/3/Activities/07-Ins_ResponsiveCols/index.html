@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Columns</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--Same grid for all screens-->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="box skyblue">col</div>
+      </div>
+      <div class="col">
+        <div class="box skyblue">col</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-8">
+        <div class="box skyblue">col-8</div>
+      </div>
+      <div class="col-4">
+        <div class="box skyblue">col-4</div>
+      </div>
+    </div>
+  </div>
+
+  <!--Using a single set of .col-sm-* classes, you can create a basic grid 
+    system that starts out stacked and becomes horizontal at the small breakpoint (sm)-->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="box purple">col-sm-8</div>
+      </div>
+      <div class="col-sm-4">
+        <div class="box purple">col-sm-4</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="box purple">col-sm</div>
+      </div>
+      <div class="col-sm">
+        <div class="box purple">col-sm</div>
+      </div>
+      <div class="col-sm">
+        <div class="box purple">col-sm</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- We ca also combine different classes for each tier as needed-->
+  <div class="container">
+    <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+    <div class="row">
+      <div class="col-6 col-md-4">
+        <div class="box red">col-6 col-md-4</div>
+      </div>
+      <div class="col-6 col-md-4">
+        <div class="box red">col-6 col-md-4</div>
+      </div>
+      <div class="col-6 col-md-4">
+        <div class="box red">col-6 col-md-4</div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
